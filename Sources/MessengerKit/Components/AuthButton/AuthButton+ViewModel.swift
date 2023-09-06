@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension AuthButton {
+public extension AuthButton {
     struct ViewModel {
         enum ButtonType {
             case `default`
