@@ -7,8 +7,8 @@
 
 import UIKit
 
-public extension AuthButton {
-    struct ViewModel {
+extension AuthButton {
+    public struct ViewModel {
         enum ButtonType {
             case `default`
             case secondary

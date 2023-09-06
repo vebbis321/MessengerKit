@@ -8,7 +8,7 @@
 import UIKit
 
 // from: https://betterprogramming.pub/lets-build-a-circular-loading-indicator-in-swift-5-b06fcdf1260d
-final class SpinnerView: UIView {
+public final class SpinnerView: UIView {
     // MARK: - properties
     private let colors: [UIColor]
     private let lineWidth: CGFloat
@@ -31,7 +31,7 @@ final class SpinnerView: UIView {
         return animation
     }()
 
-    var isAnimating = false {
+    public var isAnimating = false {
         didSet {
             if isAnimating {
                 animateStroke()
@@ -61,7 +61,7 @@ final class SpinnerView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
 
         layer.cornerRadius = frame.width / 2
